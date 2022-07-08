@@ -1,0 +1,73 @@
+@import "../colors";
+@import "../type";
+@import "../medias";
+
+.hero {
+  min-height: 100vh;
+  background: url("../../public/images/lp-section-hero.jpg");
+  background-size: cover;
+  background-position-x: 70%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero_cta {
+  width: 42%;
+  h1 {
+    margin-bottom: 2.4rem;
+    span {
+      color: $e-brand;
+    }
+  }
+  p {
+    @include type-body(md);
+    font-weight: 300;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.buttons_side {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  a:nth-of-type(2) {
+    border-bottom: 1px solid $c13;
+  }
+}
+
+@include medias(1200px) {
+  .hero {
+    .hero_cta {
+      width: 60%;
+    }
+  }
+}
+
+@include medias(960px) {
+  .hero {
+    background-image: url("../../public//images/bg-tablet-hero.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    align-items: flex-start;
+    padding-top: 16rem;
+    .hero_cta {
+      width: 80%;
+    }
+  }
+}
+
+@include medias(480px) {
+  .hero {
+    background-position: center bottom;
+    .hero_cta {
+      width: 100%;
+      h1 {
+        @include type-title(lg);
+      }
+      p {
+        @include type-body(std);
+      }
+    }
+  }
+}

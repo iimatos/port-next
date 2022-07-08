@@ -1,0 +1,47 @@
+@import "../colors";
+@import "../type";
+
+.cards_steps_container {
+  display: flex;
+  margin-top: 6.4rem;
+  justify-content: center;
+  li {
+    background: linear-gradient(110deg, $e-darkest, #000920);
+    padding: 3.6rem;
+    width: 20%;
+    transition: width 0.3s ease-out;
+    user-select: none;
+    min-height: 28rem;
+    h3 {
+      @include type-title(sm);
+      color: $e-lightest;
+      word-break: break-word;
+    }
+
+    p {
+      @include type-body(sm);
+      margin-top: 1.6rem;
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+      transition: all 0.3s linear;
+      max-height: 0;
+      overflow: hidden;
+      visibility: hideden;
+    }
+    &.current {
+      width: 42%;
+      p {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        max-height: 28rem;
+        visibility: visible;
+      }
+    }
+    &:nth-of-type(2n) {
+      background: linear-gradient(110deg, $s-dark, $s-darkest);
+      h3 {
+        color: $s-lightest;
+      }
+    }
+  }
+}

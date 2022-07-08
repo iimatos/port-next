@@ -1,0 +1,42 @@
+@import "../medias";
+
+.container_cards {
+  .card {
+    position: relative;
+    margin-top: 1.6rem;
+    max-width: 45rem;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+    opacity: 0.3;
+    cursor: pointer;
+    img {
+      border-radius: 4px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+      opacity: 1;
+      transform: scale(1.01);
+    }
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
+@include medias(1024px) {
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem 3rem;
+    .card {
+      width: calc(50% - 1.6rem);
+      flex-grow: 1;
+      max-width: 56rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../type";
+@import "../colors";
+
+.footer {
+  border-top: 1px solid $c13;
+  .footer_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    .footer_logo {
+      @include type-title(sm);
+      flex-grow: 1;
+      span {
+        color: $e-brand;
+      }
+    }
+    .footer_rights {
+      @include type-body(sm);
+      flex-grow: 1;
+    }
+  }
+}

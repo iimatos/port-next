@@ -1,0 +1,47 @@
+@import "../type";
+@import "../colors";
+@import "../medias";
+
+.contact {
+  background: url(../../public/images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 40%;
+  height: 100vh;
+  .contact_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12.4rem 0 0 0;
+    width: 100%;
+    .contact_cta {
+      width: 50%;
+      h2 {
+        font-size: 9.6rem;
+        margin-bottom: 2.4rem;
+        text-transform: uppercase;
+        span {
+          color: $s-brand;
+        }
+      }
+      p {
+        @include type-body(md);
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+@include medias(1200px) {
+  .contact {
+    .contact_wrapper {
+      .contact_cta {
+        h2 {
+          font-size: 5.6rem;
+        }
+        p {
+          @include type-body(md);
+        }
+      }
+    }
+  }
+}

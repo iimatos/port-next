@@ -1,0 +1,9 @@
+@import "../type";
+@import "../colors";
+
+.sub {
+  margin-bottom: 1.6rem;
+  span {
+    color: $e-brand;
+  }
+}

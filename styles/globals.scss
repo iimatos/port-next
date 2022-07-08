@@ -1,0 +1,46 @@
+@import "./colors";
+@import "./type";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include type-body(std);
+  color: $c13;
+  background: $c2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1 {
+  @include type-title(xl);
+}
+
+h2 {
+  @include type-title(lg);
+}
+
+.grid-120 {
+  max-width: 140rem;
+  margin: 0 auto;
+}

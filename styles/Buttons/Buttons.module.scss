@@ -1,0 +1,15 @@
+@import "../colors";
+@import "../colors";
+@import "../type";
+
+.button_primary {
+  @include type-button(1.5rem, 400);
+  display: block;
+  width: 100%;
+  max-width: 33rem;
+  background: $e-brand;
+  padding: 1.7rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #c1d3ff;
+}

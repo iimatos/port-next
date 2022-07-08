@@ -1,0 +1,22 @@
+@import "../type";
+@import "../colors";
+
+.about {
+  padding: 0 2rem 12.4rem;
+  div {
+    width: 52%;
+    h2 {
+      margin-bottom: 3.6rem;
+      span {
+        color: $e-brand;
+        &:nth-of-type(2) {
+          color: $c13;
+          font-weight: 200;
+        }
+      }
+    }
+    p + p {
+      margin-top: 1.6rem;
+    }
+  }
+}
