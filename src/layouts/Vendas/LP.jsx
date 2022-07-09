@@ -23,7 +23,7 @@ export default function LP() {
           content="Desenvolvedor e designer para o seu lançamento digital. Tenha páginas com design único e velozes"
         />
         <meta property="og:site_name" content="Igor Matos" />
-        <meta property="og:image" content="http://www.example.com/image.jpg" />
+        <meta property="og:image" content="/images/lp-section-hero.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt-BR" />
         <link
