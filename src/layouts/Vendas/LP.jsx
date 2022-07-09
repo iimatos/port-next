@@ -15,7 +15,7 @@ export default function LP() {
           name="description"
           content="Desenvolvedor e designer para o seu lançamento digital. Tenha páginas com design único e velozes"
         />
-        <meta name="theme-color" content="C070FE"></meta>
+        <meta name="theme-color" content="#C070FE"></meta>
         <meta property="og:url" content="http://www.example.com" />
         <meta property="og:title" content="Igor - Desenvolvedor" />
         <meta
