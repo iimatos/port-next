@@ -60,6 +60,7 @@
 @include medias(480px) {
   .hero {
     background-position: center bottom;
+    padding-top: 14rem;
     .hero_cta {
       width: 100%;
       h1 {

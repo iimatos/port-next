@@ -18,6 +18,18 @@
 @include medias(1024px) {
   .cards_container {
     flex-direction: column;
-    padding: 4.8rem 2rem 6.4rem;
+    align-items: center;
+  }
+}
+
+@include medias(768px) {
+  .portfolio {
+    padding: 4.8rem 2rem 3.6rem;
+  }
+}
+
+@include medias(560px) {
+  .cards_container {
+    padding: 6.4rem 0 0 0;
   }
 }

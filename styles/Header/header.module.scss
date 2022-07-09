@@ -1,5 +1,6 @@
 @import "../colors";
 @import "../type";
+@import "../medias";
 
 .container_header {
   position: fixed;
@@ -49,5 +50,13 @@
   span {
     font-weight: 300;
     font-size: 1.6rem;
+  }
+}
+
+@include medias(560px) {
+  .header {
+    nav {
+      display: none;
+    }
   }
 }

@@ -40,3 +40,9 @@
     }
   }
 }
+
+@include medias(560px) {
+  .container_cards {
+    gap: 1rem;
+  }
+}

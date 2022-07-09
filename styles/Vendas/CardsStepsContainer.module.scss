@@ -1,5 +1,6 @@
 @import "../colors";
 @import "../type";
+@import "../medias";
 
 .cards_steps_container {
   display: flex;
@@ -17,7 +18,6 @@
       color: $e-lightest;
       word-break: break-word;
     }
-
     p {
       @include type-body(sm);
       margin-top: 1.6rem;
@@ -41,6 +41,25 @@
       background: linear-gradient(110deg, $s-dark, $s-darkest);
       h3 {
         color: $s-lightest;
+      }
+    }
+  }
+}
+
+@include medias(1024px) {
+  .cards_steps_container {
+    flex-direction: column;
+
+    li {
+      &.mobile {
+        width: 100%;
+        min-height: 20rem;
+        p {
+          opacity: 1;
+          max-height: 30rem;
+          overflow: visible;
+          transform: initial;
+        }
       }
     }
   }

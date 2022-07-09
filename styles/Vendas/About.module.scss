@@ -1,6 +1,6 @@
 @import "../type";
 @import "../colors";
-
+@import "../medias";
 .about {
   padding: 0 2rem 12.4rem;
   div {
@@ -17,6 +17,13 @@
     }
     p + p {
       margin-top: 1.6rem;
+    }
+  }
+}
+@include medias(900px) {
+  .about {
+    div {
+      width: 100%;
     }
   }
 }

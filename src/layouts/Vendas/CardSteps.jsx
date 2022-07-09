@@ -5,10 +5,14 @@ export default function CardSteps({ title, text, current, setCurrent, chave }) {
   const cardRef = React.useRef();
 
   React.useEffect(() => {
-    if (Number(cardRef.current.dataset.key) === current) {
-      cardRef.current.classList.add(`${styles.current}`);
+    if (window.innerWidth >= 1024) {
+      if (Number(cardRef.current.dataset.key) === current) {
+        cardRef.current.classList.add(`${styles.current}`);
+      } else {
+        cardRef.current.classList.remove(`${styles.current}`);
+      }
     } else {
-      cardRef.current.classList.remove(`${styles.current}`);
+      cardRef.current.classList.add(`${styles.mobile}`);
     }
   });
 
