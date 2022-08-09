@@ -5,7 +5,7 @@ import styles from '../../../styles/Vendas/Briefing.module.scss';
 import useObserver from '../../hooks/useObserver';
 
 export default function Briefing() {
-  const { setComponent } = useObserver('onview');
+  const { setComponent } = useObserver('onview', 0.2);
   const ref = React.useRef();
 
   React.useEffect(() => {

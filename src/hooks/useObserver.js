@@ -7,7 +7,7 @@ const useObserver = (effect, percentage) => {
     const options = {
       root: null,
       rootMargin: '0px 0px 0px 0px',
-      threshold: percentage || 0.4,
+      threshold: percentage || 0.35,
     };
 
     function callbackObserver(entries) {

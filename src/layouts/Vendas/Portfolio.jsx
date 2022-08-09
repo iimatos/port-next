@@ -37,6 +37,7 @@ function Portfolio() {
   const ref = React.useRef();
 
   const { setComponent } = useObserver('onview');
+
   React.useEffect(() => {
     setComponent(ref.current);
   }, [ref, setComponent]);
