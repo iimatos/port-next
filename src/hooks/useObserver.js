@@ -4,10 +4,10 @@ const useObserver = (effect, percentage) => {
   const [component, setComponent] = React.useState(null);
 
   React.useEffect(() => {
-    let options = {
+    const options = {
       root: null,
       rootMargin: '0px 0px 0px 0px',
-      threshold: percentage ? percentage : 0.4,
+      threshold: percentage || 0.4,
     };
 
     function callbackObserver(entries) {
@@ -22,7 +22,7 @@ const useObserver = (effect, percentage) => {
     if (component !== null) {
       observer.observe(component);
     }
-  }, [component, percentage]);
+  }, [component, percentage, effect]);
 
   return { setComponent };
 };

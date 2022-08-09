@@ -10,14 +10,15 @@ export default function Contact() {
 
   React.useEffect(() => {
     setComponent(ref.current);
-  }, [ref]);
+  }, [ref, setComponent]);
 
   return (
     <section className={styles.contact} id="contact">
       <div className={`${styles.contact_wrapper} grid-120`}>
         <div className={styles.contact_cta} ref={ref}>
           <h2>
-            Vamos iniciar esse projeto<span>?</span>
+            Vamos iniciar esse projeto
+            <span>?</span>
           </h2>
           <p>
             Chegou o momento de expandir os horizontes do seu produto, empresa
