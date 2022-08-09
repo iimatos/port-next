@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import styles from '../../../styles/Vendas/CardsStepsContainer.module.scss';
 
