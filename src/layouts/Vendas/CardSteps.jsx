@@ -4,9 +4,10 @@ import styles from '../../../styles/Vendas/CardsStepsContainer.module.scss';
 
 export default function CardSteps({ title, text, current, setCurrent, chave }) {
   const cardRef = React.useRef();
+  const [width, setWidth] = React.useState(1920);
 
   React.useEffect(() => {
-    if (window.innerWidth >= 1024) {
+    if (width >= 1024) {
       if (Number(cardRef.current.dataset.key) === current) {
         cardRef.current.classList.add(`${styles.current}`);
       } else {
@@ -15,7 +16,11 @@ export default function CardSteps({ title, text, current, setCurrent, chave }) {
     } else {
       cardRef.current.classList.add(`${styles.mobile}`);
     }
-  });
+
+    window.addEventListener('resize', () => {
+      setWidth(window.innerWidth);
+    });
+  }, [width, current]);
 
   function handleOver() {
     setCurrent(Number(cardRef.current.dataset.key));
