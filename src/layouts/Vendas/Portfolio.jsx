@@ -36,7 +36,7 @@ function Portfolio() {
   const [indexCard, setIndexCard] = React.useState(0);
   const ref = React.useRef();
 
-  const { setComponent } = useObserver('onview');
+  const { setComponent } = useObserver('onview', 0.3, 0.1);
 
   React.useEffect(() => {
     setComponent(ref.current);

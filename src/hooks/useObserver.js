@@ -1,13 +1,14 @@
 import React from 'react';
 
-const useObserver = (effect, percentage) => {
+const useObserver = (effect, percentage, mobilePercentage) => {
   const [component, setComponent] = React.useState(null);
 
   React.useEffect(() => {
     const options = {
       root: null,
       rootMargin: '0px 0px 0px 0px',
-      threshold: percentage || 0.35,
+      threshold:
+        window.innerWidth > 768 ? percentage : mobilePercentage || 0.35,
     };
 
     function callbackObserver(entries) {
@@ -22,7 +23,7 @@ const useObserver = (effect, percentage) => {
     if (component !== null) {
       observer.observe(component);
     }
-  }, [component, percentage, effect]);
+  }, [component, percentage, effect, mobilePercentage]);
 
   return { setComponent };
 };
