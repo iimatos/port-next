@@ -22,7 +22,7 @@ export default function CardFullView({ cardView, index }) {
       </p>
       <div className={styles.container_fullview}>
         <div className={`${styles.container_fullview_page}`} ref={cardTrack}>
-          <img src={`/images/${cardView.src}-fullview.png`}></img>
+          <img src={`/images/${cardView.src}-fullview.png`} alt="Card" />
         </div>
         <p>Visualização completa</p>
       </div>

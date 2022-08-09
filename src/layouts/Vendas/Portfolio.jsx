@@ -3,7 +3,7 @@ import SubtitleVendas from '../../components/Headings/SubtitleVendas';
 import CardsPortfolio from './CardsPortfolio';
 import CardFullView from './CardFullView';
 import styles from '../../../styles/Vendas/Portfolio.module.scss';
-import useObserver from '../../hooks/useObserver.JS';
+import useObserver from '../../hooks/useObserver';
 
 const infoCards = [
   {
@@ -39,12 +39,12 @@ function Portfolio() {
   const { setComponent } = useObserver('onview');
   React.useEffect(() => {
     setComponent(ref.current);
-  }, [ref]);
+  }, [ref, setComponent]);
 
   return (
     <section className={styles.portfolio} id="portfolio">
       <div className="grid-120" ref={ref}>
-        <SubtitleVendas subtitle={'Portfolio'} pointer="." />
+        <SubtitleVendas subtitle="Portfolio" pointer="." />
         <p>Aqui você pode visualizar algumas páginas desenvolvidas por mim.</p>
         <div className={styles.cards_container}>
           <CardsPortfolio
