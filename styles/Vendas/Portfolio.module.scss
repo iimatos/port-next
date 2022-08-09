@@ -1,10 +1,15 @@
-@import "../colors";
-@import "../medias";
+@import '../colors';
+@import '../medias';
 
 .portfolio {
   background: $c2;
   background-size: cover;
   padding: 4.8rem 2rem 12.8rem;
+}
+
+.portfolio > div {
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
 }
 
 .cards_container {

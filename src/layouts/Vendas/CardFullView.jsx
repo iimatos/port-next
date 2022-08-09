@@ -1,14 +1,17 @@
-import React from "react";
-import styles from "../../../styles/Vendas/CardFullView.module.scss";
+import React from 'react';
+import styles from '../../../styles/Vendas/CardFullView.module.scss';
 
 export default function CardFullView({ cardView, index }) {
   const cardTrack = React.useRef();
 
   React.useEffect(() => {
     if (cardTrack) {
-      cardTrack.current.scrollTo({ top: 0, behavior: "smooth" });
+      cardTrack.current.scrollTo({ top: 0, behavior: 'smooth' });
       cardTrack.current.classList.add(`${styles.show}`);
     }
+    return () => {
+      cardTrack.current.classList.remove(`${styles.show}`);
+    };
   }, [cardView, index]);
 
   return (
