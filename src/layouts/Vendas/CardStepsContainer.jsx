@@ -14,6 +14,7 @@ export default function CardStepsContainer() {
         setCurrent={setCurrent}
         current={current}
       />
+
       <CardSteps
         title="02. Design"
         text="Hora de colocar a mão na massa. Essa estapa do projeto envolve a elaboração do design da página de acordo com o estudo realizado. O design final é enviado para a aprovação do cliente que deverá opinar sobre possíveis mudanças antes de aprovar o projeto. Serão realizadas até 3 etapas dessa fase."
@@ -21,6 +22,7 @@ export default function CardStepsContainer() {
         setCurrent={setCurrent}
         current={current}
       />
+
       <CardSteps
         title="03. Desenvolvimento"
         text="Aprovado o design final é hora de iniciar o desenvolvimento da página. Essa etapa é feita através das melhores práticas do mercado. Ao final do desenvolvimento você terá uma página responsiva, veloz e bela."
