@@ -1,6 +1,6 @@
-import Link from "next/link";
-import styles from "../../../styles/Vendas/Hero.module.scss";
-import ButtonLink from "../../components/Buttons/ButtonLink";
+import Link from 'next/link';
+import styles from '../../../styles/Vendas/Hero.module.scss';
+import ButtonLink from '../../components/Buttons/ButtonLink';
 
 export default function Hero({ title }) {
   return (

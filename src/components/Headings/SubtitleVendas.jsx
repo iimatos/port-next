@@ -1,4 +1,4 @@
-import styles from "../../../styles/Vendas/Subtitle.module.scss";
+import styles from '../../../styles/Vendas/Subtitle.module.scss';
 
 export default function SubtitleVendas({ subtitle, pointer }) {
   return (

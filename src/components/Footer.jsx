@@ -1,4 +1,4 @@
-import styles from "../../styles/Footer/Footer.module.scss";
+import styles from '../../styles/Footer/Footer.module.scss';
 
 export default function Footer({ logoText, rights, pointer }) {
   return (

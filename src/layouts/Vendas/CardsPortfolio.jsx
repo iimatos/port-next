@@ -19,7 +19,7 @@ export default function CardsPortfolio({ cards, indexCard, setIndexCard }) {
             onTouchStart={handleActive}
             aria-hidden="true"
           >
-            <img src={`/images/${card.src}.jpg`} />
+            <img src={`/images/${card.src}.jpg`} alt="Projeto" />
           </div>
         ))}
       </div>

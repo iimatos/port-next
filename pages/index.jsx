@@ -1,9 +1,5 @@
-import LP from "../src/layouts/Vendas/LP";
+import LP from '../src/layouts/Vendas/LP';
 
 export default function Index() {
-  return (
-    <>
-      <LP />
-    </>
-  );
+  return <LP />;
 }

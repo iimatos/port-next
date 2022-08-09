@@ -1,4 +1,4 @@
-import styles from "../../../styles/Buttons/Buttons.module.scss";
+import styles from '../../../styles/Buttons/Buttons.module.scss';
 
 export default function ButtonLink({ href, cta }) {
   return (

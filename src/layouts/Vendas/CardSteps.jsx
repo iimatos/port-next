@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../../../styles/Vendas/CardsStepsContainer.module.scss";
+import React from 'react';
+import styles from '../../../styles/Vendas/CardsStepsContainer.module.scss';
 
 export default function CardSteps({ title, text, current, setCurrent, chave }) {
   const cardRef = React.useRef();
@@ -27,6 +27,7 @@ export default function CardSteps({ title, text, current, setCurrent, chave }) {
       onMouseOver={handleOver}
       onClick={handleOver}
       onTouchStart={handleOver}
+      aria-hidden="true"
     >
       <h3>{title}</h3>
       <p>{text}</p>

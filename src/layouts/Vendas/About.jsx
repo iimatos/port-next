@@ -1,12 +1,13 @@
-import SubtitleVendas from "../../components/Headings/SubtitleVendas";
-import styles from "../../../styles/Vendas/About.module.scss";
+import styles from '../../../styles/Vendas/About.module.scss';
 
 export default function About() {
   return (
     <section className={`${styles.about} grid-120`} id="about">
       <div>
         <h2>
-          Sobre mim<span>. /</span> <span>Igor Matos</span>
+          Sobre mim
+          <span>. /</span>
+          <span>Igor Matos</span>
         </h2>
         <p>
           Estudo e trabalho com desenvolvimento web há 2 anos. Iniciei nessa

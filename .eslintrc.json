@@ -1,7 +1,8 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["prettier", "next/core-web-vitals"],
   "rules": {
     "@next/next/no-img-element": 0,
-    "no-use-before-define": 0
+    "no-use-before-define": 0,
+    "object-curly-newline": 0
   }
 }
