@@ -36,11 +36,7 @@ export default function LP() {
       <Briefing />
       <Contact />
       <About />
-      <Footer
-        logoText="IM"
-        pointer="."
-        rights="2022 - Todos os Direitos Reservados"
-      />
+      <Footer logoText="IM" pointer="." />
     </>
   );
 }

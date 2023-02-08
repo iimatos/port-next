@@ -1,6 +1,8 @@
 import styles from '../../styles/Footer/Footer.module.scss';
 
-export default function Footer({ logoText, rights, pointer }) {
+const year = new Date().getFullYear();
+
+export default function Footer({ logoText, pointer }) {
   return (
     <footer className={styles.footer}>
       <div className={`grid-120 ${styles.footer_wrapper}`}>
@@ -8,7 +10,9 @@ export default function Footer({ logoText, rights, pointer }) {
           {logoText}
           <span>{pointer}</span>
         </div>
-        <p className={styles.footer_rights}>{rights}</p>
+        <p
+          className={styles.footer_rights}
+        >{`${year} - Todos os Direitos Reservados`}</p>
       </div>
     </footer>
   );
